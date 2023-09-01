@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erptech_account *.css
+recursive-include erptech_account *.csv
+recursive-include erptech_account *.html
+recursive-include erptech_account *.ico
+recursive-include erptech_account *.js
+recursive-include erptech_account *.json
+recursive-include erptech_account *.md
+recursive-include erptech_account *.png
+recursive-include erptech_account *.py
+recursive-include erptech_account *.svg
+recursive-include erptech_account *.txt
+recursive-exclude erptech_account *.pyc
