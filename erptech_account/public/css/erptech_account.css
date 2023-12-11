@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root {
+    --left-bg: #4802B7;
+    --white: #ffffff;
+    --black: #20003b;
+}
+
+.navbar {
+    min-height: 100px !important;
+    border-bottom: 1px solid var(--black);
+}
+
+.navbar-home img {
+    max-height: 100px !important;
+    height: 100px !important;
+    width: auto !important;
+}
+
+.navbar .container,
+.page-head .container,
+.container.page-body {
+    max-width: 98% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.layout-side-section {
+    background: var(--left-bg);
+    color: var(--white);
+}
+
+.page-head .container .page-title {
+    background: var(--left-bg);
+    padding: 10px 25px !important;
+    max-width: 16.7%!important;
+}
+
+.page-head {
+    margin: 0 !important;
+}
+
+.page-head .page-head-content {
+    height: auto !important;
+    padding: 0!important;
+}
+
+.page-title h3,
+.layout-side-section .sidebar-label,
+.layout-side-section,
+.layout-side-section .text-muted,
+.desk-sidebar .standard-sidebar-item a,
+.layout-side-section a {
+    color: var(--white);
+}
+
+.page-title .es-icon,
+.layout-side-section .use.like-icon,
+.layout-side-section .es-icon,
+.sidebar-item-icon .icon {
+    fill: var(--white);
+    stroke: var(--white);
+}
+
+.desk-sidebar .standard-sidebar-item:hover,
+.desk-sidebar .standard-sidebar-item.selected {
+    background-color: #300573 !important
+}
+
+.text-muted {
+    color: inherit !important;
+}
+.codex-editor .ce-header span.h4 {
+    display: none !important;
+}

@@ -11,8 +11,8 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/erptech_account/css/erptech_account.css"
-# app_include_js = "/assets/erptech_account/js/erptech_account.js"
+app_include_css = "/assets/erptech_account/css/erptech_account.css"
+app_include_js = "/assets/erptech_account/js/erptech_account.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/erptech_account/css/erptech_account.css"
@@ -215,3 +215,10 @@ app_license = "MIT"
 # auth_hooks = [
 #	"erptech_account.auth.validate"
 # ]
+
+app_logo_url = '/assets/erptech_account/images/logo.png'
+website_context = { "splash_image": "/assets/erptech_account/images/splash-icon.png" }
+
+override_whitelisted_methods = {
+	"frappe.desk.desktop.get_workspace_sidebar_items": "erptech_account.api.get_workspace_sidebar_items"
+}
