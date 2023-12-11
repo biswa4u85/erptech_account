@@ -274,7 +274,7 @@ $(document).ready(async function () {
     </div>
   `);
   $(".desk-sidebar").each(function () {
-    $(this).append(appendData);
+     $(this).append(appendData);
   });
   // }
 });
