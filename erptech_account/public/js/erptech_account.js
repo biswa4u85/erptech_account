@@ -14,14 +14,15 @@ $(document).ready(async function () {
 
     <div class="sidebar-item-container">
       
-      <div class="desk-sidebar-item standard-sidebar-item">
+      <div class="desk-sidebar-item standard-sidebar-item collapseButton" data-target="section1">
         <a href="#" class="item-anchor block-click">
           <span class="sidebar-item-icon"><svg class="icon icon-md"><use href="#icon-accounting"></use></svg></span>
           <span class="sidebar-item-label">Accounting Masters<span>
+          <span class="sidebar-item-icon"><svg class="icon icon-xs"><use href="#es-line-down"></use></svg></span>
         </a>
       </div>
 
-      <div class="sidebar-child-item nested-container">
+      <div class="sidebar-child-item nested-container" id="section1">
         
         <div class="sidebar-item-container">
           <div class="desk-sidebar-item standard-sidebar-item">
@@ -100,14 +101,15 @@ $(document).ready(async function () {
 
     <div class="sidebar-item-container">
 
-      <div class="desk-sidebar-item standard-sidebar-item">
+      <div class="desk-sidebar-item standard-sidebar-item collapseButton"  data-target="section2">
         <a href="#" class="item-anchor block-click">
           <span class="sidebar-item-icon"><svg class="icon icon-md"><use href="#icon-accounting"></use></svg></span>
           <span class="sidebar-item-label">General Ledger<span>
+          <span class="sidebar-item-icon"><svg class="icon icon-xs"><use href="#es-line-down"></use></svg></span>
         </a>
       </div>
 
-      <div class="sidebar-child-item nested-container">
+      <div class="sidebar-child-item nested-container"  id="section2">
        
         <div class="sidebar-item-container">
           <div class="desk-sidebar-item standard-sidebar-item">
@@ -160,14 +162,15 @@ $(document).ready(async function () {
 
     <div class="sidebar-item-container">
       
-      <div class="desk-sidebar-item standard-sidebar-item">
+      <div class="desk-sidebar-item standard-sidebar-item collapseButton"  data-target="section3">
         <a href="#" class="item-anchor block-click">
           <span class="sidebar-item-icon"><svg class="icon icon-md"><use href="#icon-accounting"></use></svg></span>
           <span class="sidebar-item-label">Accounts Receivable<span>
+          <span class="sidebar-item-icon"><svg class="icon icon-xs"><use href="#es-line-down"></use></svg></span>
         </a>
       </div>
 
-      <div class="sidebar-child-item nested-container">
+      <div class="sidebar-child-item nested-container"  id="section3">
 
         <div class="sidebar-item-container">
           <div class="desk-sidebar-item standard-sidebar-item">
@@ -274,7 +277,13 @@ $(document).ready(async function () {
     </div>
   `);
   $(".desk-sidebar").each(function () {
-     $(this).append(appendData);
+    $(this).append(appendData);
   });
   // }
+
+  $(".nested-container").hide();
+  $(".collapseButton").click(function () {
+    let targetSection = $(this).data("target");
+    $("#" + targetSection).toggle();
+  });
 });

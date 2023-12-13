@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 :root {
+    --top-bg: #D3D3D3;
     --left-bg: #4802B7;
     --white: #ffffff;
     --black: #20003b;
@@ -9,6 +10,7 @@
 .navbar {
     min-height: 100px !important;
     border-bottom: 1px solid var(--black);
+    background:  var(--top-bg);
 }
 
 .navbar-home img {
